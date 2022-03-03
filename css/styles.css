@@ -100,3 +100,45 @@ a {
   width: 40px;
   height: 40px;
 }
+
+/* Blocks */
+
+.block {
+  background-color: #000;
+  border-radius: 30px;
+  margin: 3rem;
+  max-width: 1140px;
+  align-self: center;
+  display: grid;
+  overflow: hidden;
+}
+
+.block__body {
+  padding-left: 2rem;
+}
+
+.block__image {
+  position: relative;
+}
+
+.block__image > img {
+  width: 100%;
+}
+
+.block__heading,
+.block__content {
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
