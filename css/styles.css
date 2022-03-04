@@ -35,15 +35,19 @@ a {
 
 .nav {
   align-items: center;
-  background-color: #000;
+  background-color: var(--colour-primary);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 10px;
 }
 
+.nav__logo {
+  width: 75px;
+  height: auto;
+}
+
 .nav__list {
-  color: white;
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -56,22 +60,19 @@ a {
 }
 
 .nav__item > a {
-  color: #d2d0db;
-}
-
-.nav__item > a:hover {
-  color: #fff;
+  color: var(--colour-text);
 }
 
 .nav__logo {
-  fill: #fff;
   margin-left: 30px;
 }
 
 .nav__brick {
-  fill: #fff;
+  fill: var(--colour-text);
   cursor: pointer;
   margin-right: 30px;
+  transition: box-shadow 0.3s;
+  transform: translateY(-10px);
 }
 
 .collapsible__content {
@@ -87,6 +88,10 @@ a {
   opacity: 1;
 }
 
+.collapsible--expanded .nav__brick {
+  box-shadow: #fff 0 0 10px;
+}
+
 @media screen and (min-width: 768px) {
   .nav__toggle {
     display: none;
@@ -98,6 +103,7 @@ a {
     max-height: 100%;
     opacity: 1;
     width: auto;
+    transform: translateY(-10px);
   }
 
   .nav__item {
@@ -116,20 +122,20 @@ a {
 
 .block {
   align-self: center;
-  background-color: #000;
+  background-color: var(--colour-primary);
   border-radius: 30px;
   display: grid;
   margin: 3rem;
-  max-width: 1140px;
   overflow: hidden;
 }
 
 .block__body {
-  padding-left: 2rem;
+  background-color: var(--colour-primary);
+  padding: 0 0 2rem 2rem;
 }
 
 .block__image {
-  position: relative;
+  height: 400px;
 }
 
 .block__image > img {
@@ -138,7 +144,7 @@ a {
 
 .block__heading,
 .block__content {
-  color: #fff;
+  color: var(--colour-text);
   padding: 1rem;
 }
 
@@ -174,13 +180,13 @@ a {
   width: 100%;
 }
 
+.form__pair {
+  width: 100%;
+}
+
 .form__fillable::placeholder {
   color: var(--colour-text);
   opacity: 0.5;
-}
-
-.form__element:hover {
-  box-shadow: 0 0 5px 2px var(--colour-text);
 }
 
 .form__element:focus {
@@ -206,7 +212,7 @@ a {
   color: var(--colour-text);
 }
 
-.form__button {
+.button {
   align-self: center;
   background-color: var(--colour-accent);
   border-radius: 10px;
@@ -218,4 +224,25 @@ a {
   margin: 1rem 0;
   padding: 2rem 3rem;
   white-space: nowrap;
+}
+
+/* Set max width of stretchy elements */
+
+.block,
+.form__pair {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Highlighting hovered objects */
+
+.form__element:hover,
+.button:hover {
+  box-shadow: 0 0 5px 2px var(--colour-text);
+}
+
+.nav__item > a:hover {
+  text-shadow: #fff 0 0 10px;
+  transition: all 0.3s;
 }
