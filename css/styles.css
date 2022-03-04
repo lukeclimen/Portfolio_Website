@@ -20,6 +20,16 @@ a {
   text-decoration: none;
 }
 
+/* Colour palette */
+
+:root {
+  --colour-background: #000814;
+  --colour-primary: #001d3d;
+  --colour-secondary: #003566;
+  --colour-accent-1: #ffc300;
+  --colour-accent-2: #ffd60a;
+}
+
 /* Navigation bar styling */
 
 .nav {
@@ -141,4 +151,63 @@ a {
   .grid--cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Forms */
+
+.form__block {
+  padding: 3rem;
+  background-color: var(--colour-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.form__element {
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: var(--colour-secondary);
+  color: var(--colour-accent-1);
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--colour-secondary);
+}
+
+.form__element::placeholder {
+  color: rgba(255, 195, 0, 0.4);
+}
+
+.form__element:hover {
+  border-color: var(--colour-accent-1);
+}
+
+.form__element:focus {
+  outline: none;
+  border-color: var(--colour-accent-2);
+}
+
+.form__title,
+.form__description {
+  text-align: center;
+  color: var(--colour-accent-1);
+}
+
+.form__title {
+  margin-bottom: 0;
+}
+
+.form__description {
+  margin-top: 0;
+}
+
+.form__label {
+  color: var(--colour-accent-2);
+}
+
+.form__button {
+  background-color: var(--colour-accent-1);
+  color: var(--colour-primary);
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
 }
