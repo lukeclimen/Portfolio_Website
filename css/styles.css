@@ -366,7 +366,7 @@ em {
 
 .grid--2x2 {
   margin: auto;
-  width: 95vw;
+  width: 95%;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   grid-template-areas:
@@ -391,4 +391,12 @@ em {
 .four {
   grid-area: four;
   font-size: 16px;
+}
+
+/* Styling for Contact Me Page */
+
+.contact__page .form__block {
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
 }

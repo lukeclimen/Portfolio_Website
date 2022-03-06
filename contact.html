@@ -4,12 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Contact Me</title>
   </head>
   <body>
+    <nav class="nav collapsible">
+      <a class="nav__logo" href="index.html">
+        <img class="nav__logo" src="images/logo-light.png" alt="Logo" />
+      </a>
+      <svg class="icon nav__brick nav__toggle">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="nav__list collapsible__content">
+        <li class="nav__item"><a href="about.html">About</a></li>
+        <li class="nav__item"><a href="resume.html">Resume </a></li>
+        <li class="nav__item"><a href="projects.html">Portfolio</a></li>
+        <li class="nav__item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact__page width__controller">
+      <h1>Contact Me</h1>
+      <form class="form__block" action="">
+        <h2 class="form__title">Want to Reach Out?</h2>
+        <p class="form__description">
+          Fill out the form below to send me a mesage!
+        </p>
+        <div class="form__pair width__controller">
+          <label class="form__label" for="name">What is your name?</label>
+          <input
+            class="form__fillable form__element"
+            id="name"
+            type="text"
+            placeholder="Your Name"
+          />
+        </div>
+
+        <div class="form__pair width__controller">
+          <label class="form__label" for="email">What is your email?</label>
+          <input
+            class="form__fillable form__element"
+            id="email"
+            type="email"
+            placeholder="Your Email"
+          />
+        </div>
+
+        <div class="form__pair width__controller">
+          <label class="form__label" for="infoText">What can I help with?</label>
+          <textarea
+            class="form__fillable form__element"
+            id="infoText"
+            rows="5"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+
+        <button class="button form__element">Submit</button>
+      </form>
     <script src="/javascript/main.js"></script>
-    <h1>Contact</h1>
   </body>
 </html>
