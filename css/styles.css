@@ -249,15 +249,18 @@ em {
   white-space: nowrap;
 }
 
-/* Set max width of stretchy elements */
+/* Control the width of stretchy elements */
 
-.block,
-.form__pair,
-.about__image-container,
 .width__controller {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .width__controller {
+    margin: 10px;
+  }
 }
 
 /* Highlighting hovered objects */
@@ -346,4 +349,46 @@ em {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+}
+
+/* Styling for Project Page */
+
+.grid__item {
+  height: 200px;
+  background-color: var(--colour-text);
+  font-weight: 700;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.grid--2x2 {
+  margin: auto;
+  width: 95vw;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "one two"
+    "three four";
+  justify-items: stretch;
+}
+
+.one {
+  grid-area: one;
+  grid-row: span 1/1 1/2;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+  font-size: 16px;
 }

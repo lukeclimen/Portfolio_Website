@@ -9,7 +9,40 @@
     <title>Projects</title>
   </head>
   <body>
-    <h1>Projects</h1>
+    <nav class="nav collapsible">
+      <a class="nav__logo" href="index.html">
+        <img class="nav__logo" src="images/logo-light.png" alt="Logo" />
+      </a>
+      <svg class="icon nav__brick nav__toggle">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="nav__list collapsible__content">
+        <li class="nav__item"><a href="about.html">About</a></li>
+        <li class="nav__item"><a href="resume.html">Resume </a></li>
+        <li class="nav__item"><a href="projects.html">Portfolio</a></li>
+        <li class="nav__item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="width__controller">
+      <h1>Projects</h1>
+      <grid class="grid grid--2x2">
+        <div class="one grid__item">
+          <a href="#" class="grid__text">Project 1</a>
+        </div>
+        <div class="two grid__item">
+          <a href="#" class="grid__text">Project 2</a>
+        </div>
+        <div class="three grid__item">
+          <a href="#" class="grid__text">Project 3</a>
+        </div>
+        <div class="four grid__item">
+          <a href="#" class="grid__text"
+            >Going to implement JS to expand each tile (when focussed on) to
+            take up the whole space</a
+          >
+        </div>
+      </grid>
+    </div>
     <script src="/javascript/main.js"></script>
   </body>
 </html>
