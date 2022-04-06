@@ -17,6 +17,16 @@
   --colour-accent: #02c39a;
 }
 
+/* Dark theme colours */
+
+.darkmode {
+  --colour-background: hotpink;
+  --colour-primary: #05668d;
+  --colour-secondary: #028090;
+  --colour-text: #f0f3bd;
+  --colour-accent: #02c39a;
+}
+
 /* Element-specific styling */
 
 html {
@@ -103,7 +113,6 @@ strong {
   cursor: pointer;
   margin-right: 30px;
   transition: box-shadow 0.3s;
-  transform: translateY(-10px);
 }
 
 .collapsible__content {
@@ -450,4 +459,12 @@ strong {
   .grid--resume {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* Light mode and Dark mode icon styles */
+
+.lightmode__toggle {
+  margin: 0 2rem;
+  transform: translateY(-5px);
+  cursor: pointer;
 }
