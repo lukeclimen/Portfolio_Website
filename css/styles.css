@@ -330,6 +330,9 @@ strong {
 
 .about__image-container {
   display: none;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
 }
 
 .info .info__body {
@@ -347,7 +350,6 @@ strong {
 
   .about__image-container {
     display: block;
-    position: absolute;
     width: 45%;
     height: 90%;
     bottom: 0;
