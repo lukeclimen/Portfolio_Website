@@ -186,7 +186,12 @@ strong {
   margin-bottom: 0;
 }
 
+.block__sub-heading {
+  margin-top: 0;
+}
+
 .block__heading,
+.block__sub-heading,
 .block__content {
   color: var(--colour-text);
   padding-right: 1rem;
@@ -362,6 +367,7 @@ strong {
 
   .social__icon {
     fill: var(--colour-primary);
+    margin-left: 3rem;
   }
 
   .circle {
