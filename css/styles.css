@@ -409,11 +409,12 @@ strong {
 .grid--2x2 {
   margin: auto;
   width: 95%;
-  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   grid-template-areas:
-  "one two"
-  "three four";
+  "one" 
+  "two"
+  "three" 
+  "four";
   justify-items: stretch;
 }
 
@@ -433,6 +434,50 @@ strong {
 .four {
   grid-area: four;
   font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid__item {
+    height: 200px;
+    background-color: var(--colour-text);
+    font-weight: 700;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .grid--2x2 {
+    margin: auto;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "one two"
+      "three four";
+    justify-items: stretch;
+  }
+  
+  .one {
+    grid-area: one;
+    grid-row: span 1/1 1/2;
+  }
+  
+  .two {
+    grid-area: two;
+  }
+  
+  .three {
+    grid-area: three;
+  }
+  
+  .four {
+    grid-area: four;
+    font-size: 16px;
+  }
 }
 
 /* Styling for Contact Me Page */
