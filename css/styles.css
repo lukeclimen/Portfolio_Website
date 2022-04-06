@@ -20,11 +20,11 @@
 /* Dark theme colours */
 
 .darkmode {
-  --colour-background: hotpink;
-  --colour-primary: #05668d;
-  --colour-secondary: #028090;
-  --colour-text: #f0f3bd;
-  --colour-accent: #02c39a;
+  --colour-background: #2d6a4f;
+  --colour-primary: #081c15;
+  --colour-secondary: #1b4332;
+  --colour-text: #d8f3dc;
+  --colour-accent: #52b788;
 }
 
 /* Element-specific styling */
