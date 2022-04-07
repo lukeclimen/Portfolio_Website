@@ -20,3 +20,22 @@ $(".lightmode__toggle").click(function (){
     }
 });
 
+/* Projects page expansion of project "panes" */
+
+$(".grid__item").mouseover(function() {
+    let backdrop = $(this).attr("data-backdrop");
+    $("body").addClass(backdrop);
+    $(".grid__item").addClass("transparent");
+    $(this).removeClass("transparent");
+})
+    .mouseout(function () {
+    let backdrop = $(this).attr("data-backdrop");
+    let gridItem = $(".grid__item");
+    gridItem.animate(   {opacity: "1"}, 
+                        {duration: 300,
+                        complete: function() {
+                            gridItem.removeAttr("style")}
+                        });
+    gridItem.removeClass("transparent");
+    $("body").removeClass(backdrop);
+});

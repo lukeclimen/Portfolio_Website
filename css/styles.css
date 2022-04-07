@@ -32,6 +32,7 @@
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
+  z-index: 1;
 }
 
 body {
@@ -40,6 +41,7 @@ body {
   line-height: 1.5;
   background-color: var(--colour-background);
   color: var(--colour-text);
+  z-index: 1;
 }
 
 a {
@@ -394,16 +396,19 @@ strong {
 /* Styling for Project Page */
 
 .grid__item {
-  height: 200px;
-  background-color: var(--colour-text);
-  font-weight: 700;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--colour-text);
   border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  height: 200px;
+  justify-content: center;
+  padding: 10px;
+  z-index: 10;
 }
 
 .grid--2x2 {
@@ -416,6 +421,13 @@ strong {
   "three" 
   "four";
   justify-items: stretch;
+  z-index: 0;
+}
+
+.grid__text {
+  color: var(--colour-primary);
+  margin: 0;
+  padding: 0;
 }
 
 .one {
@@ -432,17 +444,41 @@ strong {
 
 .four {
   grid-area: four;
-  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
-  
   .grid--2x2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "one two"
-      "three four";
+    "one two"
+    "three four";
   }
+}
+
+.transparent {
+  opacity: 0;
+  transition: ease-out opacity 3s;
+}
+
+/*SVG backgrounds generated with svgbackgrounds.com*/
+.background1 {
+  background-image: url(/images/endless-constellation.svg);
+  transition: background-image 1s;
+}
+
+.background2 {
+  background-image: url(/images/hollowed-boxes.svg);
+  transition: background-image 1s;
+}
+
+.background3 {
+  background-image: url(/images/subtle-prism.svg);
+  transition: background-image 1s;
+}
+
+.background4 {
+  background-image: url(/images/protruding-squares.svg);
+  transition: background-image 1s;;
 }
 
 /* Styling for Contact Me Page */
