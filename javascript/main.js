@@ -26,16 +26,19 @@ $(".grid__item").mouseover(function() {
     let backdrop = $(this).attr("data-backdrop");
     $("body").addClass(backdrop);
     $(".grid__item").addClass("transparent");
+    //$(this).children("a").removeClass("invisible");
     $(this).removeClass("transparent");
 })
     .mouseout(function () {
     let backdrop = $(this).attr("data-backdrop");
     let gridItem = $(".grid__item");
+    //This animation allows the items to fade back in
     gridItem.animate(   {opacity: "1"}, 
                         {duration: 300,
                         complete: function() {
                             gridItem.removeAttr("style")}
                         });
     gridItem.removeClass("transparent");
+    //$(this).children("a").addClass("invisible");
     $("body").removeClass(backdrop);
 });

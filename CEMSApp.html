@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Projects</title>
+    <title>CEMS Application</title>
   </head>
-  <body>
+  <body class="background1">
     <nav class="nav collapsible">
       <a class="" href="index.html">
         <img class="nav__logo" src="images/logo-light.png" alt="Logo" />
@@ -29,27 +29,23 @@
         <li class="nav__item"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div class="width__controller">
-      <h1>Projects</h1>
-      <grid class="grid grid--2x2">
-        <div data-backdrop="background1" class="one grid__item">
-          <h2 class="grid__text">CEMS Application</h2>
-          <a href="CEMSApp.html" class="button hidden__button">More</a>
+
+    <section class="block">
+      <grid class="grid grid--cols-2">
+        <div class="block__image">
+          <img src="images/Willow.jpg" alt="Me" />
         </div>
-        <div data-backdrop="background2" class="two grid__item popup">
-          <h2 class="grid__text">Portfolio Website</h2>
-          <a href="PortfolioWebsite.html" class="button hidden__button">More</a>
-        </div>
-        <div data-backdrop="background3" class="three grid__item">
-          <h2 class="grid__text">POCUS Training App</h2>
-          <a href="POCUSApp.html" class="button hidden__button">More</a>
-        </div>
-        <div data-backdrop="background4" class="four grid__item">
-          <h2 class="grid__text">TBD</h2>
-          <a href="tbd.html" class="button hidden__button">More</a>
+        <div class="block__body">
+          <h2 class="block__heading">About Me</h2>
+          <p class="block__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            quis pariatur tempore aliquid at sit sunt labore harum odio
+            veritatis.
+          </p>
+          <a href="about.html" class="button">More</a>
         </div>
       </grid>
-    </div>
+    </section>
   </body>
   <script src="/javascript/main.js"></script>
 </html>

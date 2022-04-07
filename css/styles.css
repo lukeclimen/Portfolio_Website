@@ -428,6 +428,7 @@ strong {
   color: var(--colour-primary);
   margin: 0;
   padding: 0;
+  transform: translateY(35px);
 }
 
 .one {
@@ -457,7 +458,24 @@ strong {
 
 .transparent {
   opacity: 0;
-  transition: ease-out opacity 3s;
+  transition: ease-out opacity 2s;
+}
+
+.hidden__button {
+  opacity: 0;
+  transform: translateY(25px) scale(1.1);
+  margin: 0;
+}
+
+.grid__item:hover .grid__text { 
+  transform: translateY(0);
+  transition: transform .75s;
+}
+
+.grid__item:hover .hidden__button {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: transform 1s;
 }
 
 /*SVG backgrounds generated with svgbackgrounds.com*/
@@ -472,8 +490,9 @@ strong {
 }
 
 .background3 {
-  background-image: url(/images/subtle-prism.svg);
+  background-image: url(/images/scattered-forcefields.svg);
   transition: background-image 1s;
+  background-size: cover;
 }
 
 .background4 {
