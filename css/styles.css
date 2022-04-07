@@ -428,7 +428,8 @@ strong {
   color: var(--colour-primary);
   margin: 0;
   padding: 0;
-  transform: translateY(35px);
+  transform: translateY(30px);
+  transition: transform .75s;
 }
 
 .one {
@@ -465,17 +466,17 @@ strong {
   opacity: 0;
   transform: translateY(25px) scale(1.1);
   margin: 0;
+  padding: 1rem 3rem;
+  transition: transform 1s;
 }
 
 .grid__item:hover .grid__text { 
   transform: translateY(0);
-  transition: transform .75s;
 }
 
 .grid__item:hover .hidden__button {
   opacity: 1;
   transform: translateY(0) scale(1);
-  transition: transform 1s;
 }
 
 /*SVG backgrounds generated with svgbackgrounds.com*/
@@ -540,4 +541,14 @@ strong {
   margin: 0 2rem;
   transform: translateY(-5px);
   cursor: pointer;
+}
+
+/* Styles for project-specific pages */
+
+.top__corner {
+  position: absolute;
+  top: 77px;
+  right: 0;
+  height: 80%;
+  z-index: -1;
 }
