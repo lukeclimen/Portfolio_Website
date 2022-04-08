@@ -160,6 +160,14 @@ strong {
   height: 40px;
 }
 
+.icon__large {
+  width: 150px;
+  height: 150px;
+}
+.round {
+  border-radius: 100%;
+}
+
 /* Blocks */
 
 .block {
@@ -587,4 +595,12 @@ strong {
   right: 0;
   height: 80%;
   z-index: -1;
+}
+
+.display__image {
+  max-width: 100%;
+}
+
+.ordered__item {
+  margin-bottom: 3rem;
 }
