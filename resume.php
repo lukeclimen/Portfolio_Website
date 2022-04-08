@@ -10,25 +10,11 @@
     <title>Resume</title>
   </head>
   <body>
-    <nav class="nav collapsible">
-      <a class="" href="index.html">
-        <img class="nav__logo" src="images/logo-light.png" alt="Logo" />
-      </a>
-      <svg class="icon nav__brick nav__toggle">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <img
-        class="icon lightmode__toggle"
-        src="images/sun.png"
-        alt="Icon for toggling light and dark modes"
-      />
-      <ul class="nav__list collapsible__content">
-        <li class="nav__item"><a href="about.html">About</a></li>
-        <li class="nav__item"><a href="resume.html">Resume </a></li>
-        <li class="nav__item"><a href="projects.html">Portfolio</a></li>
-        <li class="nav__item"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Navigation Bar -->
+    <?php 
+        include 'nav.inc.php';
+    ?>
+
     <div class="width__controller">
       <h1>Resume</h1>
       <a
@@ -61,7 +47,7 @@
               analytical, and hardworking colleague. We are currently working on
               a new website-based project.
             </p>
-            <a href="UdbhavKharad.html" class="button reference__button"
+            <a href="UdbhavKharad.php" class="button reference__button"
               >More</a
             >
           </div>
@@ -87,7 +73,7 @@
               undergradutate career. From there, we continued to have productive
               interactions in the startup world.
             </p>
-            <a href="TylerZemlak.html" class="button reference__button">More</a>
+            <a href="TylerZemlak.php" class="button reference__button">More</a>
           </div>
         </grid>
       </section>
@@ -115,7 +101,7 @@
               with Environmental Engineering focusses. He also pursued
               consulting opportunities in the expanding carbon-market space.
             </p>
-            <a href="VinceYee.html" class="button reference__button">More</a>
+            <a href="VinceYee.php" class="button reference__button">More</a>
           </div>
         </grid>
       </section>

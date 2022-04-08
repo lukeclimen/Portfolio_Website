@@ -19,25 +19,9 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="nav collapsible">
-      <a class="" href="index.html">
-        <img class="nav__logo" src="images/logo-light.png" alt="Logo" />
-      </a>
-      <svg class="icon nav__brick nav__toggle">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <img
-        class="icon lightmode__toggle"
-        src="images/sun.png"
-        alt="Icon for toggling light and dark modes"
-      />
-      <ul class="nav__list collapsible__content">
-        <li class="nav__item"><a href="about.html">About</a></li>
-        <li class="nav__item"><a href="resume.html">Resume </a></li>
-        <li class="nav__item"><a href="projects.html">Portfolio</a></li>
-        <li class="nav__item"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <?php 
+        include 'nav.inc.php';
+    ?>
 
     <!-- About Me Block -->
     <section id="about__block" class="block width__controller">
@@ -52,7 +36,7 @@
             back to school for Computer Science! I was drawn to software because
             it allows the rapid development of ideas into actual products.
           </p>
-          <a href="about.html" class="button">More about me</a>
+          <a href="about.php" class="button">More about me</a>
         </div>
       </grid>
     </section>
@@ -70,7 +54,7 @@
             placements while in engineering, and from 3 years of working after
             University.
           </p>
-          <a href="resume.html" class="button">Resume and References</a>
+          <a href="resume.php" class="button">Resume and References</a>
         </div>
       </grid>
     </section>
@@ -88,49 +72,15 @@
             the chance to work on a couple of projects! Check them using the
             button below!
           </p>
-          <a href="projects.html" class="button">Projects</a>
+          <a href="projects.php" class="button">Projects</a>
         </div>
       </grid>
     </section>
 
     <!-- Form Block -->
-    <form class="form__block" action="">
-      <h2 class="form__title">Want to Reach Out?</h2>
-      <p class="form__description">
-        Fill out the form below to send me a mesage!
-      </p>
-      <div class="form__pair width__controller">
-        <label class="form__label" for="name">What is your name?</label>
-        <input
-          class="form__fillable form__element"
-          id="name"
-          type="text"
-          placeholder="Your Name"
-        />
-      </div>
-
-      <div class="form__pair width__controller">
-        <label class="form__label" for="email">What is your email?</label>
-        <input
-          class="form__fillable form__element"
-          id="email"
-          type="email"
-          placeholder="Your Email"
-        />
-      </div>
-
-      <div class="form__pair width__controller">
-        <label class="form__label" for="infoText">What can I help with?</label>
-        <textarea
-          class="form__fillable form__element"
-          id="infoText"
-          rows="5"
-          placeholder="Your message"
-        ></textarea>
-      </div>
-
-      <button class="button form__element">Submit</button>
-    </form>
+    <?php
+        include 'form.inc.php';
+    ?>
 
     <script src="javascript/main.js"></script>
     <script src="javascript/homePage.js"></script>

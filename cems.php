@@ -10,25 +10,10 @@
     <title>CEMS Application</title>
   </head>
   <body class="background1">
-    <nav class="nav collapsible">
-      <a class="" href="index.html">
-        <img class="nav__logo" src="images/logo-light.png" alt="Logo" />
-      </a>
-      <svg class="icon nav__brick nav__toggle">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <img
-        class="icon lightmode__toggle"
-        src="images/sun.png"
-        alt="Icon for toggling light and dark modes"
-      />
-      <ul class="nav__list collapsible__content">
-        <li class="nav__item"><a href="about.html">About</a></li>
-        <li class="nav__item"><a href="resume.html">Resume </a></li>
-        <li class="nav__item"><a href="projects.html">Portfolio</a></li>
-        <li class="nav__item"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Navigation Bar -->
+    <?php 
+        include 'nav.inc.php';
+    ?>
 
     <div class="width__controller">
       <h1>Club Event Management System</h1>
@@ -130,5 +115,5 @@
       /></a>
     </div>
   </body>
-  <script src="/javascript/main.js"></script>
+  <script src="javascript/main.js"></script>
 </html>

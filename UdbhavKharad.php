@@ -4,26 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
     <title>Udbhav Kharad</title>
   </head>
   <body>
-    <nav class="nav collapsible">
-      <a class="nav__logo" href="../index.html">
-        <img class="nav__logo" src="../images/logo-light.png" alt="Logo" />
-      </a>
-      <svg class="icon nav__brick nav__toggle">
-        <use xlink:href="../images/sprite.svg#menu"></use>
-      </svg>
-      <ul class="nav__list collapsible__content">
-        <li class="nav__item"><a href="../about.html">About</a></li>
-        <li class="nav__item"><a href="../resume.html">Resume </a></li>
-        <li class="nav__item"><a href="../projects.html">Portfolio</a></li>
-        <li class="nav__item"><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Navigation Bar -->
+    <?php 
+        include 'nav.inc.php';
+    ?>
 
     <section id="about__block" class="block width__controller">
       <grid class="grid grid--cols-2">
@@ -62,4 +52,5 @@
       </grid>
     </section>
   </body>
+      <script src="javascript/main.js"></script>
 </html>

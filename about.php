@@ -10,25 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <nav class="nav collapsible">
-      <a class="" href="index.html">
-        <img class="nav__logo" src="images/logo-light.png" alt="Logo" />
-      </a>
-      <svg class="icon nav__brick nav__toggle">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <img
-        class="icon lightmode__toggle"
-        src="images/sun.png"
-        alt="Icon for toggling light and dark modes"
-      />
-      <ul class="nav__list collapsible__content">
-        <li class="nav__item"><a href="about.html">About</a></li>
-        <li class="nav__item"><a href="resume.html">Resume </a></li>
-        <li class="nav__item"><a href="projects.html">Portfolio</a></li>
-        <li class="nav__item"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Navigation Bar -->
+    <?php 
+        include 'nav.inc.php';
+    ?>
 
     <section class="info">
       <h1>Hi, I'm <em>Luke Climenhage</em></h1>
@@ -58,7 +43,7 @@
         looking for Co-op opportunities for September 2023, with an expected
         graduation date in May 2023.
       </p>
-      <a class="button" href="blog.html">Blog</a>
+      <a class="button" href="blog.php">Blog</a>
 
       <a href="https://www.linkedin.com/in/lclimenh/">
         <svg class="icon social__icon">
