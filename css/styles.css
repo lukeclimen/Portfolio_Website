@@ -193,13 +193,21 @@ strong {
   justify-content: center;
   align-items: center;
   margin: 10px;
+  width: auto;
 }
 
 .company__logo > .logo__image {
   border-radius: 50%;  
-  width: 400px;
+  width: auto;
+  height: 100%;
   z-index: 1;
   background-color: #fff;
+}
+
+@media screen and (min-width: 852px) {
+  .company__logo>.logo__image {
+    height: 100%;
+  }
 }
 
 .block__heading {
@@ -539,13 +547,13 @@ strong {
 }
 .reference__button {
   position: relative;
-  padding: 2% 10%;
-  margin: 30%;
-  margin-top: 7rem;
+  padding: 2 10%;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .info__blurb {
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
