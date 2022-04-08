@@ -204,11 +204,20 @@ strong {
   background-color: #fff;
 }
 
+.resizable {
+  width: 100%;
+}
+
 @media screen and (min-width: 852px) {
   .company__logo>.logo__image {
     height: 100%;
   }
+  .resizable {
+    width: auto;
+    height: 100%;
+  }
 }
+
 
 .block__heading {
   margin-bottom: 0;
