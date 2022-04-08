@@ -102,7 +102,7 @@ strong {
   border-bottom: 1px solid rgba(235, 243, 216, 0.3);
 }
 
-.nav__item > a {
+.nav__item>a {
   color: var(--colour-text);
 }
 
@@ -164,6 +164,7 @@ strong {
   width: 150px;
   height: 150px;
 }
+
 .round {
   border-radius: 100%;
 }
@@ -192,7 +193,7 @@ strong {
   align-content: center;
 }
 
-.block__image > img {
+.block__image>img {
   width: 100%;
 }
 
@@ -204,8 +205,8 @@ strong {
   width: auto;
 }
 
-.company__logo > .logo__image {
-  border-radius: 50%;  
+.company__logo>.logo__image {
+  border-radius: 50%;
   width: auto;
   height: 100%;
   z-index: 1;
@@ -220,6 +221,7 @@ strong {
   .company__logo>.logo__image {
     height: 100%;
   }
+
   .resizable {
     width: auto;
     height: 100%;
@@ -363,7 +365,7 @@ strong {
   box-shadow: 0 0 5px 2px var(--colour-text);
 }
 
-.nav__item > a:hover {
+.nav__item>a:hover {
   text-shadow: #fff 0 0 10px;
   transition: all 0.3s;
 }
@@ -460,10 +462,10 @@ strong {
   width: 95%;
   gap: 10px;
   grid-template-areas:
-  "one" 
-  "two"
-  "three" 
-  "four";
+    "one"
+    "two"
+    "three"
+    "four";
   justify-items: stretch;
   z-index: 0;
 }
@@ -496,8 +498,8 @@ strong {
   .grid--2x2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "one two"
-    "three four";
+      "one two"
+      "three four";
   }
 }
 
@@ -514,7 +516,7 @@ strong {
   transition: transform 1s;
 }
 
-.grid__item:hover .grid__text { 
+.grid__item:hover .grid__text {
   transform: translateY(0);
 }
 
@@ -525,24 +527,25 @@ strong {
 
 /*SVG backgrounds generated with svgbackgrounds.com*/
 .background1 {
-  background-image: url(/images/endless-constellation.svg);
+  background-image: url(images/endless-constellation.svg);
   transition: background-image 1s;
 }
 
 .background2 {
-  background-image: url(/images/hollowed-boxes.svg);
+  background-image: url(images/hollowed-boxes.svg);
   transition: background-image 1s;
 }
 
 .background3 {
-  background-image: url(/images/scattered-forcefields.svg);
+  background-image: url(images/scattered-forcefields.svg);
   transition: background-image 1s;
   background-size: cover;
 }
 
 .background4 {
-  background-image: url(/images/protruding-squares.svg);
-  transition: background-image 1s;;
+  background-image: url(images/protruding-squares.svg);
+  transition: background-image 1s;
+  ;
 }
 
 /* Styling for Contact Me Page */
@@ -562,9 +565,10 @@ strong {
   margin-right: auto;
   justify-content: center;
 }
+
 .reference__button {
   position: relative;
-  padding: 2 10%;
+  padding: 2% 10%;
   margin-top: 1rem;
   margin-bottom: 0;
 }
