@@ -589,10 +589,18 @@ strong {
 
 /* Styles for project-specific pages */
 
-.top__corner {
+.top__right__corner {
   position: absolute;
   top: 77px;
   right: 0;
+  height: 80%;
+  z-index: -1;
+}
+
+.top__left__corner {
+  position: absolute;
+  top: 77px;
+  left: 0;
   height: 80%;
   z-index: -1;
 }
@@ -603,4 +611,8 @@ strong {
 
 .ordered__item {
   margin-bottom: 3rem;
+}
+
+.right-align {
+  text-align: right;
 }
